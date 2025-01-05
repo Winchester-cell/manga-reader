@@ -53,7 +53,7 @@ export default function Manga() {
                     setAuthor(data.data.attributes.name)
                 })
 
-            fetch(`https://api.mangadex.org/manga/${mangaID}/feed?translatedLanguage[]=en&limit=500&order[chapter]=asc`)
+            fetch(`https://corsproxy.io/?url=https://api.mangadex.org/manga/${mangaID}/feed?translatedLanguage[]=en&limit=500&order[chapter]=asc`)
                 .then(response => {
                     return response.json()
                 }).then(data => {
