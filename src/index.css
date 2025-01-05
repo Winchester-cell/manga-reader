@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'logo';
+    src: url(../public/fonts/Saphifen.ttf);
+}
+
+.shadow{
+    box-shadow: -5px -5px 10px black , 5px 5px 10px black;
+}
+
