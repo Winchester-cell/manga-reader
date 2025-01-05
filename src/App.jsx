@@ -12,7 +12,6 @@ function App() {
     <>
       <Routes>
         <Route path='/' element={<Home/>} />
-        <Route path='/manga-reader/' element={<Home/>} />
         <Route path='/manga/:mangaID' element={<Manga/>} />
         <Route path='/about' element={<About/>} />
         <Route path='/search/:searchedWord' element={<Search/>} />
