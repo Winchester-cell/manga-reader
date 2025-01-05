@@ -36,7 +36,7 @@ export default function Chapter() {
       <button onClick={backHomeFunc} className='my-5 text-lg gap-2 flex justify-center items-center font-bold text-gray-300 bg-gray-900 xl:px-20 xl:py-3 px-7 py-2  rounded-xl hover:scale-110 duration-500 transition-all' > <IoIosArrowBack /> <span>Back Home</span>   </button>
       {
         chapterFiles.map((chapterFile, index) => {
-          return <img className='w-[80dvw] lg:w-[50dvw]' key={index} src={`${baseUrl}/data-saver/${hash}/${chapterFile}`} alt="" />
+          return <img className='w-[80dvw] lg:w-[50dvw]' key={index} src={`https://corsproxy.io/?url=${baseUrl}/data-saver/${hash}/${chapterFile}`} alt="" />
         })
       }
 
