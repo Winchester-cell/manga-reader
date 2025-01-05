@@ -13,7 +13,7 @@ export default function Chapter() {
   let chapterID = params.chapterID
 
   useEffect(() => {
-    fetch(`https://api.mangadex.org/at-home/server/${chapterID}`)
+    fetch(`https://corsproxy.io/?url=https://api.mangadex.org/at-home/server/${chapterID}`)
       .then(response => {
         return response.json()
       }).then(data => {
